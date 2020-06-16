@@ -12,7 +12,7 @@ int main() {
     int a, b, ans;
     cin >> a >> b;
     ans = GCD(a, b);
-    cout << "GCD of " << a << " " << b << " = " << ans << endl;
+    cout << "GCD of " << a << " and " << b << " = " << ans << endl;
 
     return 0;
 }
