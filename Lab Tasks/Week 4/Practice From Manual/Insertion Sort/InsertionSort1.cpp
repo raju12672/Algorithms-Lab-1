@@ -2,17 +2,21 @@
 using namespace std;
 
 int main() {
-    int n, a[100000], t;
+    int n, a[100000], j, x;
     cout << "Enter Array Size:";
     cin >> n;
     cout << "Enter Elements of Array: ";
     for (int i = 0; i < n; i++) cin >> a[i];
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n - 1; j++) {
-            if (a[j] > a[j + 1]) swap(a[j], a[j + 1]);
+        x = a[i];
+        j = i - 1;
+        while (j >= 0 && a[j] < x) {
+            a[j + 1] = a[j];
+            j--;
         }
+        a[j + 1] = x;
     }
-    cout << "Bubble sorted list in ascending: ";
+    cout << "Descending: ";
     for (int i = 0; i < n; i++) cout << a[i] << " ";
     cout << endl;
 

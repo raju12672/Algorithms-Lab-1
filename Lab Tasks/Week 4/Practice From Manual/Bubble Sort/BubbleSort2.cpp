@@ -12,9 +12,14 @@ int main() {
             if (a[j] > a[j + 1]) swap(a[j], a[j + 1]);
         }
     }
-    cout << "Bubble sorted list in ascending: ";
-    for (int i = 0; i < n; i++) cout << a[i] << " ";
-    cout << endl;
+    int s = 0;
+    cout << "Ascending order: ";
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+        s += a[i];
+    }
+    cout << endl
+         << "Sum = " << s << endl;
 
     return 0;
 }
