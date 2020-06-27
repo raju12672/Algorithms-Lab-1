@@ -11,8 +11,7 @@ int GCD(int a, int b) {
 int main() {
     int a, b, ans;
     cin >> a >> b;
-    ans = GCD(a, b);
-    cout << "GCD of " << a << " and " << b << " = " << ans << endl;
+    cout << "GCD of " << a << " and " << b << " = " << GCD(a, b) << endl;
 
     return 0;
 }
