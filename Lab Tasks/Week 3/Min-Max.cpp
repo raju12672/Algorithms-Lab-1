@@ -1,8 +1,8 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    int n, x, mx = INT_MIN, mn = INT_MAX, s = 0;
+    long long n, x, mx = 0, mn = 1000000000000000, s = 0;
     cin >> n;
     while (n--) {
         cin >> x;
