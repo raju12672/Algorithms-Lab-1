@@ -1,10 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int n, k, p, x;
-
 int main() {
-    int tests;
+    int tests, n, k, p, x;
     cin >> tests;
     while (tests--) {
         cin >> n >> k >> p;
